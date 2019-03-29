@@ -1,0 +1,29 @@
+{
+  "name": "wordguess-cli",
+  "version": "1.0.0",
+  "description": "\"A CLI Based word guess game\"",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kinla/WordGuess-Cli.git"
+  },
+  "keywords": [
+    "node",
+    "cli",
+    "imquirer",
+    "word-guess"
+  ],
+  "author": "Sharon Chien / Kinla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kinla/WordGuess-Cli/issues"
+  },
+  "homepage": "https://github.com/Kinla/WordGuess-Cli#readme"
+}
