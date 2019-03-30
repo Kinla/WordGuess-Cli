@@ -11,7 +11,7 @@
 
 */
 
-let Letter = require("./Letter")
+const Letter = require("./Letter")
 
 class Word {
     constructor (input) {
@@ -22,16 +22,11 @@ class Word {
         this.string = this.array.map(ltr => ltr.display()).join(" ")
         return this.string
     }
-    match(char){
+    match(char){        
         this.array.forEach(ltr => {
-            check(char)
+            ltr.check(char)
         });
     }
 }
 
-let bench = new Word("bench")
-
-console.log(bench.toString())
-
-bench.match("a")
-
+module.exports = Word

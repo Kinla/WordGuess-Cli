@@ -6,3 +6,13 @@
   * Prompts the user for each guess and keeps track of the user's remaining guesses
 
 */
+
+
+const Word = require("./Word")
+
+const words = ["blueberry", "banana", "apple", "kiwi", "pomegranate"]
+
+let selected = Math.floor(Math.random()*6)
+
+let question = new Word(selected)
+
