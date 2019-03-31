@@ -15,8 +15,7 @@ const Letter = require("./Letter")
 
 class Word {
     constructor (input) {
-        this.letters = input.split("")
-        this.array = this.letters.map(el => new Letter(el))
+        this.array = input.split("").map(el => new Letter(el))
     }
     toString(){
         this.string = this.array.map(ltr => ltr.display()).join(" ")
