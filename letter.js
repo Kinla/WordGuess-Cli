@@ -16,15 +16,26 @@ class Letter {
         this.guessed = false;
     }
     display(){
-        if (this.guessed){
-            return this.string
-        } else {
-            return "_"
+        switch (this.string) {
+            case " ":
+                this.guessed = true;
+                return " "
+       
+            default:
+            if (this.guessed){
+                return this.string
+            } else {
+                return "_"
+            }
         }
     }
-    check(character){
+    check(char){
+        let character = char.toLowerCase();
         if (character === this.string){
             this.guessed = true
+            return this.guessed
+        } else {
+            return this.guessed
         }
     }
 }
