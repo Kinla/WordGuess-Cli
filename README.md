@@ -22,15 +22,14 @@ A very fruity CLI based Word Guess game powered by inquirer.
 - - -
 
 ## Technologies
-
+  * Node.js
   * JavaScript
   * inquirer - npm
   * chalk - npm
 
 - - -  
 
-###Improvements
-
+## Improvements
   * Ramdomize through the possible questions but never repeat
   * Auto exit game when all questions played
   * Keep score
