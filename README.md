@@ -12,12 +12,12 @@ A very fruity CLI based Word Guess game powered by inquirer.
   4. Should you wish to quit the game at anytime please use `ctrl + c`
 
 ### Demo
-   ![how-this-works](https://github.com/Kinla/LIRI_Bot/blob/master/Recordings/concert.gif)
-
+   ![how-this-works](https://github.com/Kinla/WordGuess-Cli/blob/master/recording/game.gif)
 
 ### Game Rules
-
-  * Will only accept 
+  * Will only accept one alphabet letter at a time
+  * Guesses cannot repeat
+  * To win: player need to guess the word before the allowed 10 wrong guesses are used up
 
 - - -
 
