@@ -15,6 +15,7 @@ const words = ["blueberry", "banana", "pink lady apple", "golden kiwi", "pomegra
 
 let numOfGuesses;
 let question;
+let guessed;
 
 let game = {
     newGame: () => {
@@ -22,6 +23,7 @@ let game = {
         numOfGuesses = 10;
         let selector = Math.floor(Math.random()*(words.length));
         let word = words[selector];
+        guessed = ""
         question = new Word(word);
         game.playGame();
     },
@@ -34,18 +36,40 @@ let game = {
           name: "userGuess",
         })
         .then(function(res){
-            numOfGuesses--;
-            const before = question.toString();
-            question.match(res.userGuess);
-            const after = question.toString();
-            console.log(`\n${after}\n`);
-            if (before === after) {
-                console.log(`${chalk.red("INCORRECT!")}\n`)
-            } else {
-                console.log(`${chalk.green("CORRECT!")}\n`)
-            }
-            game.checkSolution();
+            game.checkAlphabet(res.userGuess.toLowerCase());
         })
+    },
+    checkAlphabet: (guess) =>{
+        const alphabet = "abcdefghijklmnopqrstuvwxyz"
+        const alphabetArray = alphabet.split("")
+        if (alphabetArray.includes(guess)){
+            game.checkGuessed(guess);
+        } else {
+            console.log(`${chalk.gray("Please enter a letter in the alphabet.")}\n`)
+            game.playGame();
+        }
+    },
+    checkGuessed: (guess) => {
+        if (guessed.includes(guess)){
+            console.log(`${chalk.gray("You have already guessed this letter before.")}\n`)
+            game.playGame();
+        } else {
+            guessed+=guess
+            game.checkMatch(guess);
+            game.checkSolution();
+        }
+    },
+    checkMatch: (guess) =>{
+        const before = question.toString();
+        question.match(guess);
+        const after = question.toString();
+        console.log(`\n${after}\n`);
+        if (before === after) {
+            numOfGuesses--;
+            console.log(`${chalk.red("INCORRECT!")}\n`)
+        } else {
+            console.log(`${chalk.green("CORRECT!")}\n`)
+        }
     },
     checkSolution: () => {
         let solve = question.array.map(el => el.guessed);
