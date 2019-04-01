@@ -18,8 +18,9 @@
   "keywords": [
     "node",
     "cli",
-    "imquirer",
-    "word-guess"
+    "inquirer",
+    "word guess",
+    "chalk"
   ],
   "author": "Sharon Chien / Kinla",
   "license": "MIT",

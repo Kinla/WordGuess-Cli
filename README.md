@@ -12,6 +12,7 @@ A very fruity CLI based Word Guess game powered by inquirer.
   4. Should you wish to quit the game at anytime please use `ctrl + c`
 
 ### Demo
+   ![how-this-works](https://github.com/Kinla/LIRI_Bot/blob/master/Recordings/concert.gif)
 
 
 ### Game Rules
