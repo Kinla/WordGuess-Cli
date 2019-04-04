@@ -1,11 +1,9 @@
 # So Fruity
 
 ## Overview
-
 A very fruity CLI based Word Guess game powered by inquirer.
 
 ### Instructions
-
   1. Clone this git repository and navigate to the folder in terminal
   2. Install the required npms via command line `npm install`
   3. Start the game by typing `node index.js`
@@ -18,19 +16,16 @@ A very fruity CLI based Word Guess game powered by inquirer.
   * Will only accept one alphabet letter at a time
   * Guesses cannot repeat
   * To win: player need to guess the word before the allowed 10 wrong guesses are used up
+  * Game will exit automatically when all the words been used
 
 - - -
 
 ## Technologies
-
+  * Node.js
   * JavaScript
-  * inquirer - npm
-  * chalk - npm
+  * Inquirer - npm
+  * Chalk - npm
 
 - - -  
 
-###Improvements
-
-  * Ramdomize through the possible questions but never repeat
-  * Auto exit game when all questions played
-  * Keep score
+###Improvements / Bugs

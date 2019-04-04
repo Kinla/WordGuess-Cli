@@ -11,7 +11,7 @@ class Word {
     match(char){        
         this.array.forEach(ltr => {
             ltr.check(char)
-        });
+        })
     }
 }
 

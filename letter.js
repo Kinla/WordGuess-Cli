@@ -1,7 +1,7 @@
 class Letter {
     constructor(string) {
-        this.string = string;
-        this.guessed = false;
+        this.string = string
+        this.guessed = false
     }
     display(){
         switch (this.string) {
