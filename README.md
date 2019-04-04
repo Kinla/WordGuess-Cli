@@ -28,4 +28,4 @@ A very fruity CLI based Word Guess game powered by inquirer.
 
 - - -  
 
-###Improvements / Bugs
+##Improvements / Bugs
