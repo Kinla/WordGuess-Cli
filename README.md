@@ -15,8 +15,8 @@ A very fruity CLI based Word Guess game powered by inquirer.
 ### Game Rules
   * Will only accept one alphabet letter at a time
   * Guesses cannot repeat
-  * To win: player need to guess the word before the allowed 10 wrong guesses are used up
-  * Game will exit automatically when all the words been used
+  * To win: player need to guess the word before the allowed 10 guesses are used up
+  * Game will exit automatically when all the words been played
 
 - - -
 
@@ -28,4 +28,4 @@ A very fruity CLI based Word Guess game powered by inquirer.
 
 - - -  
 
-##Improvements / Bugs
+## Improvements / Bugs
