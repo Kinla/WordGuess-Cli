@@ -87,7 +87,7 @@ const game = {
     },
     checkGameEnd: () => {
         if(words.length === 0){
-            console.log(`${chalk.yellow("You have finished the game")}\n`);
+            console.log(`${chalk.yellow("You have finished the game. It will now exit.")}\n`);
             process.exit();
         };
     }
