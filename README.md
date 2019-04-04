@@ -8,16 +8,12 @@ A very fruity CLI based Word Guess game powered by inquirer.
   2. Install the required npms via command line `npm install`
   3. Start the game by typing `node index.js`
   4. Follow instruction on screen
-  5. Should you wish to quit the game at anytime please use `ctrl + c`
+  5. To win: you will need to guess the word before the 10 guesses are used up
+  6. Game will exit automatically wehn all the words have been played.
+      * Should you wish to quit the game at anytime please use `ctrl + c`
 
 ### Demo
    ![how-this-works](https://github.com/Kinla/WordGuess-Cli/blob/master/assets/game.gif)
-
-### Game Rules
-  * Will only accept one alphabet letter at a time
-  * Guesses cannot repeat
-  * To win: player need to guess the word before the allowed 10 guesses are used up
-  * Game will exit automatically when all the words been played
 
 - - -
 
